@@ -290,5 +290,6 @@ MIT License
 
 Happy automating 🚀  
 _Your personal job assistant, straight to WhatsApp._
-#   J o b - A l e r t - A I - A g e n t  
+#   J o b - A l e r t - A I - A g e n t 
+ 
  
