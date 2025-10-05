@@ -1,4 +1,4 @@
-# 📩 Email to WhatsApp – AI Agent
+# Email to WhatsApp – AI Agent
 
 An automated Python-based **AI Agent** that reads **job-related emails** from your Gmail inbox, **summarizes** them using OpenAI, and **forwards the summaries** to your **WhatsApp** via Twilio.
 
@@ -8,14 +8,14 @@ This project is designed to act as your **personal job alert assistant**, keepin
 
 ## 🧠 Features
 
-- ✅ Connects securely to Gmail using OAuth 2.0 (`credentials.json` + `token.json`)  
-- 📥 Fetches **unread job-related emails** using smart search queries  
-- 📝 Extracts **email subject and body**, handling both plain text and HTML formats  
-- 🧠 Summarizes the content using OpenAI GPT (e.g., GPT-4o-mini) for quick scanning  
-- 📲 Sends the summarized information to your **WhatsApp number** using Twilio's API  
-- 🔄 Marks emails as **read only after successful send** to avoid data loss  
-- 🔐 Uses `.env` file for secrets (OpenAI API key, Twilio credentials)  
-- 🪶 Lightweight, modular structure – each file has a clear responsibility  
+- ✅ Connects securely to Gmail using OAuth 2.0 (`credentials.json` + `token.json`)
+- 📥 Fetches **unread job-related emails** using smart search queries
+- 📝 Extracts **email subject and body**, handling both plain text and HTML formats
+- 🧠 Summarizes the content using OpenAI GPT (e.g., GPT-4o-mini) for quick scanning
+- 📲 Sends the summarized information to your **WhatsApp number** using Twilio's API
+- 🔄 Marks emails as **read only after successful send** to avoid data loss
+- 🔐 Uses `.env` file for secrets (OpenAI API key, Twilio credentials)
+- 🪶 Lightweight, modular structure – each file has a clear responsibility
 
 ---
 
@@ -283,8 +283,13 @@ Before deploying publicly, ensure you comply with Gmail & Twilio's Terms of Serv
 
 ```
 MIT License
-© 2025 Your Name
+© 2025 Furqan Ahmed Khan
 ```
+
+---
+
+Happy automating 🚀  
+_Your personal job assistant, straight to WhatsApp._
 
 ---
 
