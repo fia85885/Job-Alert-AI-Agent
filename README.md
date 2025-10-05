@@ -8,15 +8,16 @@ This project is designed to act as your **personal job alert assistant**, keepin
 
 ## 🧠 Features
 
-- ✅ Connects securely to Gmail using OAuth 2.0 (`credentials.json` + `token.json`)  
-- 📬 Fetches **unread job-related emails** using smart search queries  
-- 📝 Extracts **email subject and body**, handling both plain text and HTML formats  
-- 🧠 Summarizes the content using OpenAI GPT (e.g., GPT-4o-mini) for quick scanning  
-- 📲 Sends the summarized information to your **WhatsApp number** using Twilio's API  
-- 🔄 Marks emails as **read only after successful send** to avoid data loss  
-- 🔐 Uses `.env` file for secrets (OpenAI API key, Twilio credentials)  
-- 🪶 Lightweight, modular structure – each file has a clear responsibility
+- ✅ Connects securely to Gmail using OAuth 2.0 (`credentials.json` + `token.json`)
+- 📥 Fetches **unread job-related emails** using smart search queries
+- 📝 Extracts **email subject and body**, handling both plain text and HTML formats
+- 🧠 Summarizes the content using OpenAI GPT (e.g., GPT-4o-mini) for quick scanning
+- 📲 Sends the summarized information to your **WhatsApp number** using Twilio's API
+- 🔄 Marks emails as **read only after successful send** to avoid data loss
+- 🔐 Uses `.env` file for secrets (OpenAI API key, Twilio credentials)
+- 🪶 Lightweight, modular structure – each file has a clear responsibility  
 
+---
 
 ## 📁 Project Structure
 
@@ -290,10 +291,5 @@ MIT License
 Happy automating 🚀  
 _Your personal job assistant, straight to WhatsApp._
 
----
-
-Happy automating 🚀  
-_Your personal job assistant, straight to WhatsApp._
-#   J o b - A l e r t - A I - A g e n t 
  
  
