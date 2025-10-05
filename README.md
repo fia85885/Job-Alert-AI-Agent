@@ -289,7 +289,4 @@ MIT License
 ---
 
 Happy automating 🚀  
-_Your personal job assistant, straight to WhatsApp._
-
- 
- 
+_Your personal job assistant, straight to WhatsApp._ 
