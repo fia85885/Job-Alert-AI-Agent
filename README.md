@@ -20,7 +20,7 @@ This project is designed to act as your personal job alert assistant, keeping yo
 
 🪶 Lightweight, modular structure – each file has a clear responsibility
 
-#📁 Project Structure
+## 📁 Project Structure
 /Email to WhatsApp/
 │
 ├── agent.py               # Main orchestrator - runs the entire AI agent workflow
@@ -34,8 +34,8 @@ This project is designed to act as your personal job alert assistant, keeping yo
 ├── token.json             # Automatically generated Gmail access token
 └── README.md              # 📄 Project documentation (this file)
 
-⚙️ File-by-File Breakdown
-1. agent.py — 🧠 Main AI Agent
+## ⚙️ File-by-File Breakdown
+### 1. agent.py — 🧠 Main AI Agent
 This is the entry point of the application. It ties everything together:
 
 Loads the Gmail service.
@@ -56,7 +56,7 @@ Ensures error handling so the agent runs smoothly for hours.
 
 Maintains logs to track processed messages.
 
-2. gmail_client.py — 📬 Email Fetching Module
+### 2. gmail_client.py — 📬 Email Fetching Module
 Handles Gmail API authentication and robust email extraction.
 
 Main Components:
@@ -71,7 +71,7 @@ mark_as_read(service, msg_id): Marks emails as read after successful WhatsApp se
 
 Why it matters: Gmail messages often come in complex multipart formats (text, HTML, attachments). This module ensures reliable extraction without crashing.
 
-3. summarizer.py — 📝 AI Summarization Engine
+### 3. summarizer.py — 📝 AI Summarization Engine
 Uses the OpenAI API to generate short, structured summaries of the email content.
 
 Main Steps:
@@ -84,7 +84,7 @@ Returns a concise message suitable for WhatsApp.
 
 You can modify the prompt to fit your preferred style (e.g., JSON, bullet points, etc.).
 
-4. whatsapp_client.py — 📲 WhatsApp Sender
+### 4. whatsapp_client.py — 📲 WhatsApp Sender
 Handles communication with Twilio's WhatsApp API.
 
 Key Responsibilities:
@@ -97,7 +97,7 @@ Handles errors gracefully (e.g., sandbox verification issues).
 
 Note: If you’re using a Twilio trial account, the recipient must first join the Twilio WhatsApp sandbox and verify their number.
 
-5. config.py — ⚡ Configuration Loader
+### 5. config.py — ⚡ Configuration Loader
 Centralizes environment variables from .env:
 
 OPENAI_API_KEY
@@ -112,7 +112,7 @@ YOUR_WHATSAPP_NUMBER
 
 This prevents hardcoding secrets in multiple places and allows easy configuration changes.
 
-6. .env — 🔐 Environment Variables
+### 6. .env — 🔐 Environment Variables
 Stores all sensitive credentials in one place. Example:
 
 OPENAI_API_KEY=sk-xxxxxx
@@ -123,14 +123,14 @@ YOUR_WHATSAPP_NUMBER=whatsapp:+91XXXXXXXXXX
 
 ⚠️ Never commit this file to GitHub. > Add .env to .gitignore.
 
-7. credentials.json & token.json — 🔑 Gmail OAuth
+### 7. credentials.json & token.json — 🔑 Gmail OAuth
 credentials.json → Downloaded from Google Cloud Console (OAuth client ID).
 
 token.json → Automatically generated when you first authenticate. It stores your access + refresh tokens.
 
 Do not share these files publicly. Treat them like passwords.
 
-8. requirements.txt — 📦 Dependencies
+### 8. requirements.txt — 📦 Dependencies
 Contains all Python dependencies. Install with:
 
 pip install -r requirements.txt
