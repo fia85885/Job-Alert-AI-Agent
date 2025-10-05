@@ -1,3 +1,4 @@
+# Email to WhatsApp – AI Agent
 # 📩 Email to WhatsApp – AI Agent
 
 An automated Python-based **AI Agent** that reads **job-related emails** from your Gmail inbox, **summarizes** them using OpenAI, and **forwards the summaries** to your **WhatsApp** via Twilio.
